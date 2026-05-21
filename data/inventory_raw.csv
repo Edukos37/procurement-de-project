@@ -1,0 +1,11 @@
+product_id,product_name,category,quantity,price,supplier,last_updated
+1,Laptop Pro 15,Electronics,50,85000,TechSuppliers,2024-01-15
+2,,Electronics,-10,NULL,TechSuppliers,2024-01-20
+3,Wireless Mouse,Accessories,200,500,NULL,2024-02-01
+4,Mechanical Keyboard,Accessories,NULL,1500,KeyboardCo,INVALID_DATE
+5,Monitor 27inch,Electronics,30,25000,ScreenWorld,2024-02-10
+6,USB Hub,Accessories,150,800,AccessoryCo,2024-02-15
+7,Laptop Pro 15,Electronics,50,85000,TechSuppliers,2024-01-15
+8,Gaming Chair,  ,75,-500,FurnitureCo,2024-03-01
+9,Headphones,Electronics,NULL,NULL,NULL,2024-03-05
+10,Desk Lamp,Furniture,60,1200,LightingCo,NOT_A_DATE
