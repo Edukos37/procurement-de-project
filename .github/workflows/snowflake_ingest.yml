@@ -11,15 +11,18 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4        # ← updated from v3 to v4
         with:
-          fetch-depth: 2        # needed to compare with previous commit
+          fetch-depth: 2
 
       - name: Install SnowSQL
         run: |
           curl -O https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/linux_x86_64/snowsql-1.2.9-linux_x86_64.bash
           bash snowsql-1.2.9-linux_x86_64.bash --noprompt
           echo "$HOME/bin" >> $GITHUB_PATH
+
+      - name: Verify SnowSQL installed
+        run: ~/bin/snowsql --version
 
       - name: Load PRC files into Snowflake Bronze
         env:
@@ -31,7 +34,7 @@ jobs:
         run: |
           for FILE in $(git diff --name-only HEAD~1 HEAD -- 'data/PRC_*.csv'); do
             FILENAME=$(basename $FILE .csv)
-            echo "Loading: $FILENAME"
+            echo "Loading: $FILENAME from $FILE"
 
             ~/bin/snowsql \
               -a "$SNOWSQL_ACCOUNT" \
@@ -41,6 +44,7 @@ jobs:
               -d "$SNOWSQL_DATABASE" \
               -s PRC \
               --noup \
+              -o exit_on_error=true \
               -q "
                 PUT file://$(pwd)/$FILE
                     @BRONZE_DB.PRC.PROCUREMENT_STAGE
@@ -64,4 +68,5 @@ jobs:
                 SET LAST_EXECUTION_DATE = CURRENT_TIMESTAMP
                 WHERE TARGET_TABLE = '$FILENAME';
               "
+            echo "$FILENAME loaded successfully"
           done
