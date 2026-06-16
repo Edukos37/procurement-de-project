@@ -1,0 +1,91 @@
+name: Snowflake Bronze Ingestion
+
+on:
+  push:
+    paths:
+      - 'data/PRC_*.csv'    # triggers ONLY when PRC files are pushed
+
+jobs:
+  load-to-snowflake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install SnowSQL
+        run: |
+          curl -O https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/linux_x86_64/snowsql-1.2.9-linux_x86_64.bash
+          bash snowsql-1.2.9-linux_x86_64.bash --noprompt
+          echo "$HOME/bin" >> $GITHUB_PATH
+
+      - name: Detect changed PRC files
+        id: changed_files
+        run: |
+          # Get list of changed CSV files in data/ folder
+          FILES=$(git diff --name-only HEAD~1 HEAD -- 'data/PRC_*.csv' | tr '\n' ',')
+          echo "files=$FILES" >> $GITHUB_OUTPUT
+          echo "Changed files: $FILES"
+
+      - name: Upload changed files to Snowflake Stage
+        env:
+          SNOWSQL_ACCOUNT:  ${{ secrets.SNOWFLAKE_ACCOUNT }}
+          SNOWSQL_USER:     ${{ secrets.SNOWFLAKE_USERNAME }}
+          SNOWSQL_PWD:      ${{ secrets.SNOWFLAKE_PASSWORD }}
+          SNOWSQL_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+          SNOWSQL_DATABASE:  ${{ secrets.SNOWFLAKE_DATABASE }}
+        run: |
+          # Loop through each changed file and upload + load
+          for FILE in $(git diff --name-only HEAD~1 HEAD -- 'data/PRC_*.csv'); do
+            FILENAME=$(basename $FILE .csv)
+            echo "Processing: $FILENAME"
+
+            snowsql -a $SNOWSQL_ACCOUNT \
+                    -u $SNOWSQL_USER \
+                    --password $SNOWSQL_PWD \
+                    -w $SNOWSQL_WAREHOUSE \
+                    -d $SNOWSQL_DATABASE \
+                    -s PRC \
+                    -q "
+                      -- Upload file to stage
+                      PUT file://$FILE @BRONZE_DB.PRC.PROCUREMENT_STAGE
+                          AUTO_COMPRESS = FALSE
+                          OVERWRITE = TRUE;
+
+                      -- Truncate and reload Bronze table
+                      TRUNCATE TABLE BRONZE_DB.PRC.$FILENAME;
+
+                      -- COPY INTO Bronze table
+                      COPY INTO BRONZE_DB.PRC.$FILENAME
+                      FROM @BRONZE_DB.PRC.PROCUREMENT_STAGE/${FILENAME}.csv
+                      FILE_FORMAT = (
+                          TYPE                         = CSV
+                          SKIP_HEADER                  = 1
+                          FIELD_OPTIONALLY_ENCLOSED_BY = '\"'
+                          NULL_IF                      = ('NULL','null','','INVALID','N/A')
+                          EMPTY_FIELD_AS_NULL          = TRUE
+                      )
+                      ON_ERROR = CONTINUE;
+
+                      -- Update CDC metadata
+                      UPDATE EDW_DB.PRC.DATA_INTEGRATION_DATES
+                      SET LAST_EXECUTION_DATE = CURRENT_TIMESTAMP
+                      WHERE TARGET_TABLE = '$FILENAME';
+                    "
+          done
+
+      - name: Trigger Silver → Gold → EDW Pipeline
+        env:
+          SNOWSQL_ACCOUNT:   ${{ secrets.SNOWFLAKE_ACCOUNT }}
+          SNOWSQL_USER:      ${{ secrets.SNOWFLAKE_USERNAME }}
+          SNOWSQL_PWD:       ${{ secrets.SNOWFLAKE_PASSWORD }}
+          SNOWSQL_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+          SNOWSQL_DATABASE:  ${{ secrets.SNOWFLAKE_DATABASE }}
+        run: |
+          snowsql -a $SNOWSQL_ACCOUNT \
+                  -u $SNOWSQL_USER \
+                  --password $SNOWSQL_PWD \
+                  -w $SNOWSQL_WAREHOUSE \
+                  -d $SNOWSQL_DATABASE \
+                  -s PRC \
+                  -q "EXECUTE TASK EDW_DB.PRC.TASK_BRONZE_LOAD;"
