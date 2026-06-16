@@ -1,0 +1,67 @@
+name: Snowflake Bronze Ingestion
+
+on:
+  push:
+    paths:
+      - 'data/PRC_*.csv'
+
+jobs:
+  load-to-snowflake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2        # needed to compare with previous commit
+
+      - name: Install SnowSQL
+        run: |
+          curl -O https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/linux_x86_64/snowsql-1.2.9-linux_x86_64.bash
+          bash snowsql-1.2.9-linux_x86_64.bash --noprompt
+          echo "$HOME/bin" >> $GITHUB_PATH
+
+      - name: Load PRC files into Snowflake Bronze
+        env:
+          SNOWSQL_ACCOUNT:   ${{ secrets.SNOWFLAKE_ACCOUNT }}
+          SNOWSQL_USER:      ${{ secrets.SNOWFLAKE_USERNAME }}
+          SNOWSQL_PWD:       ${{ secrets.SNOWFLAKE_PASSWORD }}
+          SNOWSQL_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+          SNOWSQL_DATABASE:  ${{ secrets.SNOWFLAKE_DATABASE }}
+        run: |
+          for FILE in $(git diff --name-only HEAD~1 HEAD -- 'data/PRC_*.csv'); do
+            FILENAME=$(basename $FILE .csv)
+            echo "Loading: $FILENAME"
+
+            ~/bin/snowsql \
+              -a "$SNOWSQL_ACCOUNT" \
+              -u "$SNOWSQL_USER" \
+              --password "$SNOWSQL_PWD" \
+              -w "$SNOWSQL_WAREHOUSE" \
+              -d "$SNOWSQL_DATABASE" \
+              -s PRC \
+              --noup \
+              -q "
+                PUT file://$(pwd)/$FILE
+                    @BRONZE_DB.PRC.PROCUREMENT_STAGE
+                    AUTO_COMPRESS=FALSE
+                    OVERWRITE=TRUE;
+
+                TRUNCATE TABLE BRONZE_DB.PRC.$FILENAME;
+
+                COPY INTO BRONZE_DB.PRC.$FILENAME
+                FROM @BRONZE_DB.PRC.PROCUREMENT_STAGE/${FILENAME}.csv
+                FILE_FORMAT = (
+                    TYPE                         = CSV
+                    SKIP_HEADER                  = 1
+                    FIELD_OPTIONALLY_ENCLOSED_BY = '\"'
+                    NULL_IF                      = ('NULL','null','','INVALID','N/A')
+                    EMPTY_FIELD_AS_NULL          = TRUE
+                )
+                ON_ERROR = CONTINUE;
+
+                UPDATE EDW_DB.PRC.DATA_INTEGRATION_DATES
+                SET LAST_EXECUTION_DATE = CURRENT_TIMESTAMP
+                WHERE TARGET_TABLE = '$FILENAME';
+              "
+          done
