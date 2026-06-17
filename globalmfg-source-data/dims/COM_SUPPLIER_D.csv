@@ -1,0 +1,52 @@
+SUPPLIER_ID,SUPPLIER_NAME,REGION,COUNTRY,CATEGORY,PAYMENT_TERMS,IS_ACTIVE,RATING,ONBOARDING_DATE,CONTACT_EMAIL,PHONE
+SUP001,,EMEA,Germany,Chemicals,NET30,Y,,2019-03-24,sup1@vendor.com,+1-338-9279
+SUP002,ProSource 2,EMEA,UK,Raw Materials,NET15,Y,,2021-11-30,sup2@vendor.com,+1-532-6574
+SUP003,AlphaVendor 3,APJ,Japan,Logistics,NET60,Y,4.2,2021-01-03,sup3@vendor.com,+1-227-7201
+SUP004,OmegaParts 4,NAM,USA,Chemicals,NET30,Y,3.6,2018-06-13,sup4@vendor.com,+1-975-4814
+SUP005,QuickDeliver 5,NAM,USA,Packaging,NET60,Y,3.7,2021-10-31,sup5@vendor.com,+1-763-2169
+SUP006,,APJ,Japan,Packaging,NET45,Y,4.4,2019-04-15,sup6@vendor.com,+1-941-1525
+SUP007,QuickDeliver 7,NAM,Mexico,Chemicals,NET60,Y,3.6,2021-08-09,sup7@vendor.com,+1-569-3340
+SUP008,DeltaGoods 8,APJ,Japan,Machinery,NET15,Y,1.9,2020-11-09,sup8@vendor.com,+1-605-2489
+SUP009,MegaMart 9,APJ,Japan,Machinery,NET30,N,2.5,2020-12-19,sup9@vendor.com,+1-357-1188
+SUP010,DeltaGoods 10,APJ,Japan,Electronics,NET60,N,INVALID,2019-06-24,sup10@vendor.com,+1-612-3927
+SUP011,QuickDeliver 11,APJ,India,Raw Materials,NET60,Y,-1,2020-12-22,sup11@vendor.com,+1-100-6310
+SUP012,AlphaVendor 12,APJ,Japan,Raw Materials,NET30,Y,4.5,2018-06-25,sup12@vendor.com,+1-849-8962
+SUP013,MegaMart 13,EMEA,France,Raw Materials,NET60,N,4.9,2021-11-13,sup13@vendor.com,+1-305-6107
+SUP014,AlphaVendor 14,EMEA,Germany,Raw Materials,NET45,Y,2.4,2019-04-17,sup14@vendor.com,INVALID
+SUP015,GlobalTech 15,EMEA,UK,Electronics,NET45,Y,3.7,2018-09-28,sup15@vendor.com,+1-840-8744
+SUP016,BetaCorp 16,,Canada,Packaging,NET15,N,2.9,2021-10-11,sup16@vendor.com,+1-769-2612
+SUP017,AlphaVendor 17,EMEA,Germany,Raw Materials,NET15,Y,2.7,2019-05-27,sup17@vendor.com,+1-995-2235
+SUP018,FastSupply 18,EMEA,Germany,Electronics,NET45,Y,2.6,2020-04-01,sup18@vendor.com,+1-160-3697
+SUP019,QuickDeliver 19,NAM,Canada,Office Supplies,NET15,Y,1.8,2018-04-30,sup19@vendor.com,+1-693-9883
+SUP020,GlobalTech 20,NAM,Mexico,Raw Materials,NET30,Y,4.4,2018-05-20,sup20@vendor.com,+1-791-4853
+SUP021,ProSource 21,,UK,Chemicals,NET60,Y,1.8,2019-05-04,sup21@vendor.com,+1-371-7484
+SUP022,QuickDeliver 22,EMEA,Germany,Electronics,NET15,Y,1.3,2019-06-28,sup22@vendor.com,+1-235-6718
+SUP023,AlphaVendor 23,APJ,Australia,Chemicals,NET60,Y,3.7,2021-09-20,sup23@vendor.com,+1-206-3200
+SUP024,DeltaGoods 24,APJ,India,Chemicals,NET60,Y,3.7,2020-11-01,sup24@vendor.com,+1-600-5114
+SUP025,FastSupply 25,APJ,India,Electronics,NET60,Y,3.5,2020-06-23,sup25@vendor.com,+1-664-8007
+SUP026,FastSupply 26,APJ,India,Machinery,NET30,Y,3.3,2018-09-19,sup26@vendor.com,+1-142-6050
+SUP027,AlphaVendor 27,APJ,India,Packaging,NET15,Y,4.7,2018-11-29,sup27@vendor.com,+1-919-3900
+SUP028,MegaMart 28,APJ,Japan,Logistics,NET45,Y,1.6,2020-02-23,sup28@vendor.com,+1-993-1634
+SUP029,ProSource 29,APJ,Japan,Logistics,NET45,Y,1.1,2019-11-04,sup29@vendor.com,+1-385-2137
+SUP030,AlphaVendor 30,NAM,Mexico,Packaging,NET30,Y,4.5,2021-04-04,sup30@vendor.com,+1-371-1626
+SUP031,AlphaVendor 31,NAM,Mexico,Machinery,NET30,N,4.6,2018-04-01,sup31@vendor.com,INVALID
+SUP032,ProSource 32,EMEA,France,Packaging,NET60,Y,3.9,2019-09-26,sup32@vendor.com,+1-782-7691
+SUP033,QuickDeliver 33,EMEA,France,Office Supplies,NET45,Y,2.6,2019-09-15,sup33@vendor.com,+1-393-4443
+SUP034,OmegaParts 34,EMEA,UK,Chemicals,NET45,N,4.2,2018-12-14,sup34@vendor.com,+1-774-2389
+SUP035,OmegaParts 35,EMEA,Germany,Chemicals,NET60,Y,4.2,2018-04-05,sup35@vendor.com,+1-350-8784
+SUP036,GammaTrade 36,APJ,India,Chemicals,NET15,N,2.6,2021-11-09,sup36@vendor.com,+1-105-2746
+SUP037,MegaMart 37,APJ,Japan,Electronics,NET45,Y,2.8,2021-09-29,sup37@vendor.com,+1-643-6198
+SUP038,OmegaParts 38,NAM,Canada,Logistics,NET15,Y,4.0,2019-06-15,sup38@vendor.com,+1-869-5050
+SUP039,DeltaGoods 39,NAM,Canada,Electronics,NET60,Y,2.1,2021-01-11,sup39@vendor.com,+1-182-3267
+SUP040,MegaMart 40,NAM,Canada,Packaging,NET15,N,1.2,2020-03-08,sup40@vendor.com,+1-888-1320
+SUP041,BetaCorp 41,EMEA,UK,Logistics,NET15,N,3.2,2021-05-20,sup41@vendor.com,+1-325-8999
+SUP042,,NAM,Canada,Chemicals,NET45,N,4.7,2020-12-29,sup42@vendor.com,+1-127-7455
+SUP043,GlobalTech 43,EMEA,UK,Raw Materials,NET30,Y,2.5,2019-11-01,sup43@vendor.com,+1-445-7211
+SUP044,QuickDeliver 44,NAM,Mexico,Machinery,NET30,Y,1.9,2021-08-27,sup44@vendor.com,+1-141-1508
+SUP045,GlobalTech 45,APJ,Japan,Chemicals,NET30,Y,2.9,2020-01-26,sup45@vendor.com,+1-271-2876
+SUP046,QuickDeliver 46,,Australia,Chemicals,NET15,N,4.8,2021-04-27,sup46@vendor.com,+1-807-4978
+SUP047,OmegaParts 47,NAM,Mexico,Logistics,NET30,Y,3.1,2018-05-22,sup47@vendor.com,
+SUP048,FastSupply 48,NAM,Canada,Chemicals,NET45,N,1.7,2021-08-25,sup48@vendor.com,+1-376-9817
+SUP049,BetaCorp 49,NAM,Canada,Logistics,NET45,Y,2.1,2020-08-09,sup49@vendor.com,+1-683-7209
+SUP050,AlphaVendor 50,NAM,Canada,Packaging,NET60,Y,3.2,2019-01-27,sup50@vendor.com,+1-187-4954
+SUP001_DUP,,EMEA,Germany,Chemicals,NET30,Y,,2019-03-24,sup1@vendor.com,+1-338-9279

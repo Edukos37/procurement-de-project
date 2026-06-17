@@ -1,0 +1,152 @@
+ITEM_ID,ITEM_NAME,CATEGORY,SUBCATEGORY,UOM,UNIT_COST_USD,LEAD_TIME_DAYS,IS_ACTIVE,ITEM_TYPE,REORDER_POINT
+ITM0001,Office Supplies Item 1,Office Supplies,Premium,SET,3560.65,2,Y,Spare Parts,123
+ITM0002,Raw Materials Item 2,Raw Materials,Premium,MTR,2656.96,48,Y,Spare Parts,369
+ITM0003,Packaging Item 3,Packaging,Type-B,LTR,602.18,49,Y,Finished Goods,120
+ITM0004,Packaging Item 4,Packaging,Standard,KG,,24,Y,Spare Parts,17
+ITM0005,Raw Materials Item 5,Raw Materials,Standard,SET,4720.73,49,N,Finished Goods,
+ITM0006,Office Supplies Item 6,Office Supplies,Type-A,LTR,4705.61,53,Y,Spare Parts,261
+ITM0007,Chemicals Item 7,Chemicals,Standard,KG,4969.62,49,N,Raw Material,315
+ITM0008,,Raw Materials,Premium,LTR,4301.53,20,Y,Raw Material,388
+ITM0009,Logistics Item 9,Logistics,Type-A,PCS,1203.13,11,Y,Spare Parts,240
+ITM0010,Office Supplies Item 10,Office Supplies,Standard,SET,4298.74,15,Y,Raw Material,311
+ITM0011,Raw Materials Item 11,Raw Materials,Type-B,LTR,4134.02,11,Y,Raw Material,393
+ITM0012,Packaging Item 12,Packaging,Standard,SET,2015.53,35,N,Spare Parts,51
+ITM0013,Office Supplies Item 13,Office Supplies,Type-A,KG,1148.48,56,Y,Raw Material,430
+ITM0014,Electronics Item 14,Electronics,Premium,LTR,911.54,41,N,Finished Goods,250
+ITM0015,Packaging Item 15,Packaging,Type-B,LTR,2061.17,43,N,Raw Material,28
+ITM0016,Packaging Item 16,Packaging,Premium,MTR,INVALID,30,N,Finished Goods,106
+ITM0017,Machinery Item 17,Machinery,Type-A,PCS,1338.95,19,N,Raw Material,258
+ITM0018,Chemicals Item 18,Chemicals,Type-B,LTR,2756.44,6,Y,Finished Goods,246
+ITM0019,Chemicals Item 19,Chemicals,Standard,MTR,3528.53,31,N,Finished Goods,243
+ITM0020,Office Supplies Item 20,Office Supplies,Type-B,KG,1384.86,27,Y,Raw Material,146
+ITM0021,Packaging Item 21,,Premium,PCS,2235.5,22,N,Spare Parts,487
+ITM0022,Raw Materials Item 22,Raw Materials,Premium,PCS,4280.78,21,N,Raw Material,477
+ITM0023,Office Supplies Item 23,Office Supplies,Type-B,BOX,4824.3,38,Y,Finished Goods,457
+ITM0024,Electronics Item 24,Electronics,Type-B,BOX,4355.31,5,N,Spare Parts,183
+ITM0025,Office Supplies Item 25,Office Supplies,Premium,LTR,3135.86,32,Y,Raw Material,45
+ITM0026,Chemicals Item 26,Chemicals,Type-A,BOX,4891.8,46,Y,Spare Parts,95
+ITM0027,,Electronics,Standard,BOX,732.12,37,Y,Finished Goods,99
+ITM0028,Logistics Item 28,Logistics,Premium,MTR,719.87,17,N,Spare Parts,
+ITM0029,Packaging Item 29,Packaging,Premium,LTR,4938.32,28,Y,Spare Parts,442
+ITM0030,Office Supplies Item 30,Office Supplies,Premium,MTR,1798.0,45,Y,Finished Goods,434
+ITM0031,INVALID,Packaging,Type-A,MTR,3727.13,58,Y,Finished Goods,320
+ITM0032,Raw Materials Item 32,Raw Materials,Type-B,SET,490.33,3,Y,Spare Parts,27
+ITM0033,Chemicals Item 33,Chemicals,Standard,SET,2080.44,51,Y,Raw Material,266
+ITM0034,Logistics Item 34,Logistics,Premium,LTR,3734.06,8,N,Finished Goods,82
+ITM0035,Raw Materials Item 35,Raw Materials,Premium,MTR,1832.05,1,Y,Raw Material,73
+ITM0036,Chemicals Item 36,Chemicals,Premium,SET,4701.76,15,N,Finished Goods,327
+ITM0037,Machinery Item 37,Machinery,Type-A,SET,4120.16,20,N,Finished Goods,
+ITM0038,Packaging Item 38,Packaging,Type-B,MTR,682.64,43,N,Raw Material,390
+ITM0039,Office Supplies Item 39,Office Supplies,Premium,LTR,168.42,29,N,Finished Goods,447
+ITM0040,Chemicals Item 40,Chemicals,Standard,KG,1993.71,8,N,Finished Goods,349
+ITM0041,Chemicals Item 41,,Type-B,PCS,3935.96,54,Y,Raw Material,120
+ITM0042,Raw Materials Item 42,Raw Materials,Type-A,LTR,4292.74,9,Y,Finished Goods,66
+ITM0043,Electronics Item 43,Electronics,Type-B,MTR,1622.24,4,Y,Raw Material,225
+ITM0044,Chemicals Item 44,Chemicals,Standard,MTR,2970.36,15,Y,Raw Material,411
+ITM0045,Chemicals Item 45,Chemicals,Type-A,KG,4992.94,28,Y,Spare Parts,374
+ITM0046,Electronics Item 46,Electronics,Type-B,KG,635.33,38,Y,Spare Parts,315
+ITM0047,Office Supplies Item 47,Office Supplies,Type-A,SET,3256.33,47,Y,Spare Parts,241
+ITM0048,Office Supplies Item 48,Office Supplies,Premium,SET,479.95,43,Y,Spare Parts,498
+ITM0049,Office Supplies Item 49,Office Supplies,Type-A,BOX,487.34,52,Y,Raw Material,40
+ITM0050,Machinery Item 50,Machinery,Premium,LTR,4368.67,28,Y,Spare Parts,317
+ITM0051,Electronics Item 51,Electronics,Premium,PCS,4237.14,36,Y,Finished Goods,400
+ITM0052,Raw Materials Item 52,Raw Materials,Type-A,MTR,4645.78,18,Y,Finished Goods,149
+ITM0053,Packaging Item 53,Packaging,Type-B,PCS,2833.77,10,Y,Finished Goods,392
+ITM0054,Office Supplies Item 54,Office Supplies,Standard,LTR,3609.37,37,Y,Finished Goods,89
+ITM0055,,Machinery,Premium,BOX,3037.34,14,Y,Spare Parts,230
+ITM0056,Chemicals Item 56,Chemicals,Standard,KG,1106.49,4,Y,Finished Goods,164
+ITM0057,Logistics Item 57,Logistics,Standard,KG,43.61,12,Y,Spare Parts,282
+ITM0058,Machinery Item 58,Machinery,Standard,KG,1988.37,28,Y,Spare Parts,481
+ITM0059,Packaging Item 59,Packaging,Premium,LTR,,11,N,Raw Material,480
+ITM0060,Office Supplies Item 60,Office Supplies,Premium,MTR,397.84,48,Y,Finished Goods,180
+ITM0061,Electronics Item 61,Electronics,Type-B,LTR,1758.74,42,Y,Finished Goods,62
+ITM0062,Raw Materials Item 62,Raw Materials,Type-A,PCS,4756.7,30,N,Raw Material,483
+ITM0063,Chemicals Item 63,Chemicals,Standard,PCS,2201.62,41,Y,Spare Parts,312
+ITM0064,Machinery Item 64,Machinery,Type-A,KG,1846.84,42,Y,Raw Material,314
+ITM0065,Office Supplies Item 65,Office Supplies,Type-A,BOX,4545.7,13,Y,Raw Material,253
+ITM0066,Electronics Item 66,Electronics,Standard,SET,426.22,3,Y,Raw Material,234
+ITM0067,Machinery Item 67,Machinery,Standard,LTR,1940.15,44,Y,Raw Material,341
+ITM0068,Packaging Item 68,Packaging,Standard,LTR,3620.05,59,Y,Spare Parts,51
+ITM0069,Raw Materials Item 69,Raw Materials,Premium,PCS,2977.23,20,N,Raw Material,415
+ITM0070,Raw Materials Item 70,Raw Materials,Type-A,SET,3353.93,2,Y,Spare Parts,102
+ITM0071,Packaging Item 71,Packaging,Type-B,PCS,778.95,51,Y,Raw Material,404
+ITM0072,Chemicals Item 72,,Type-B,MTR,1886.72,54,Y,Raw Material,
+ITM0073,Chemicals Item 73,Chemicals,Standard,SET,3920.08,16,Y,Spare Parts,472
+ITM0074,Packaging Item 74,Packaging,Premium,BOX,3848.35,33,N,Finished Goods,428
+ITM0075,Machinery Item 75,Machinery,Premium,LTR,2774.93,55,Y,Spare Parts,52
+ITM0076,Packaging Item 76,Packaging,Premium,KG,4732.33,29,Y,Finished Goods,222
+ITM0077,Machinery Item 77,Machinery,Type-A,LTR,1126.57,7,Y,Finished Goods,
+ITM0078,Chemicals Item 78,Chemicals,Premium,BOX,3078.66,2,Y,Finished Goods,437
+ITM0079,Chemicals Item 79,Chemicals,Standard,PCS,,41,N,Finished Goods,66
+ITM0080,Office Supplies Item 80,INVALID,Type-B,SET,722.17,40,Y,Finished Goods,302
+ITM0081,Chemicals Item 81,Chemicals,Standard,KG,4767.25,51,Y,Spare Parts,457
+ITM0082,Chemicals Item 82,Chemicals,Type-A,LTR,3943.66,47,Y,Raw Material,386
+ITM0083,INVALID,Raw Materials,Type-B,SET,2325.79,41,Y,Finished Goods,42
+ITM0084,,,Type-A,LTR,4667.19,53,N,Spare Parts,28
+ITM0085,Raw Materials Item 85,Raw Materials,Type-A,SET,1662.96,24,N,Spare Parts,390
+ITM0086,Office Supplies Item 86,Office Supplies,Premium,LTR,4621.93,52,Y,Raw Material,227
+ITM0087,Machinery Item 87,Machinery,Standard,LTR,517.48,19,Y,Spare Parts,318
+ITM0088,Raw Materials Item 88,Raw Materials,Type-A,SET,4350.84,28,Y,Raw Material,415
+ITM0089,Electronics Item 89,Electronics,Type-B,KG,718.18,51,N,Finished Goods,74
+ITM0090,Logistics Item 90,Logistics,Type-A,MTR,771.42,24,Y,Spare Parts,400
+ITM0091,Raw Materials Item 91,Raw Materials,Standard,PCS,,32,N,Raw Material,70
+ITM0092,Packaging Item 92,Packaging,Standard,SET,4582.81,8,Y,Finished Goods,241
+ITM0093,Chemicals Item 93,Chemicals,Standard,SET,1740.39,35,Y,Spare Parts,445
+ITM0094,Chemicals Item 94,Chemicals,Standard,MTR,1125.09,51,Y,Finished Goods,414
+ITM0095,Packaging Item 95,Packaging,Type-B,MTR,4421.81,26,N,Raw Material,220
+ITM0096,Logistics Item 96,Logistics,Standard,SET,375.45,34,Y,Finished Goods,459
+ITM0097,Machinery Item 97,Machinery,Type-B,BOX,2516.8,54,Y,Raw Material,88
+ITM0098,Raw Materials Item 98,Raw Materials,Standard,MTR,4475.15,17,Y,Raw Material,499
+ITM0099,Raw Materials Item 99,Raw Materials,Type-A,MTR,3206.73,38,Y,Finished Goods,347
+ITM0100,Machinery Item 100,Machinery,Type-A,KG,410.71,50,Y,Raw Material,117
+ITM0101,Office Supplies Item 101,INVALID,Standard,SET,4783.47,52,N,Spare Parts,242
+ITM0102,Electronics Item 102,Electronics,Premium,PCS,1704.26,56,Y,Raw Material,450
+ITM0103,Office Supplies Item 103,Office Supplies,Type-A,LTR,1212.48,29,Y,Finished Goods,59
+ITM0104,Office Supplies Item 104,Office Supplies,Type-B,LTR,4669.09,13,Y,Spare Parts,273
+ITM0105,Packaging Item 105,Packaging,Premium,MTR,2288.87,38,Y,Finished Goods,35
+ITM0106,Machinery Item 106,Machinery,Premium,LTR,2685.77,28,Y,Spare Parts,382
+ITM0107,Office Supplies Item 107,Office Supplies,Type-B,LTR,2768.35,33,N,Raw Material,153
+ITM0108,Machinery Item 108,Machinery,Type-A,BOX,1869.13,36,Y,Finished Goods,111
+ITM0109,Office Supplies Item 109,,Standard,BOX,2599.07,58,Y,Spare Parts,486
+ITM0110,Raw Materials Item 110,Raw Materials,Standard,MTR,1685.19,35,N,Raw Material,298
+ITM0111,,Logistics,Premium,MTR,1541.85,56,Y,Raw Material,252
+ITM0112,Chemicals Item 112,Chemicals,Type-B,SET,261.52,34,N,Finished Goods,430
+ITM0113,Electronics Item 113,Electronics,Type-B,KG,2207.99,27,Y,Spare Parts,266
+ITM0114,Office Supplies Item 114,Office Supplies,Type-A,SET,694.72,21,N,Raw Material,202
+ITM0115,Raw Materials Item 115,Raw Materials,Standard,SET,3861.09,42,Y,Raw Material,257
+ITM0116,Raw Materials Item 116,Raw Materials,Standard,LTR,3525.98,32,Y,Spare Parts,188
+ITM0117,Logistics Item 117,Logistics,Premium,BOX,4092.8,52,Y,Spare Parts,31
+ITM0118,Chemicals Item 118,Chemicals,Standard,SET,2398.0,35,Y,Raw Material,366
+ITM0119,Electronics Item 119,Electronics,Type-B,KG,3350.82,41,Y,Finished Goods,61
+ITM0120,Chemicals Item 120,Chemicals,Type-B,KG,4822.77,11,N,Raw Material,488
+ITM0121,Office Supplies Item 121,Office Supplies,Standard,LTR,1430.65,50,Y,Raw Material,303
+ITM0122,Chemicals Item 122,Chemicals,Type-B,BOX,4411.81,59,Y,Spare Parts,413
+ITM0123,Chemicals Item 123,Chemicals,Type-A,KG,1495.47,60,Y,Spare Parts,242
+ITM0124,Machinery Item 124,Machinery,Type-B,MTR,2342.76,8,Y,Finished Goods,384
+ITM0125,Packaging Item 125,,Standard,MTR,3373.63,40,N,Spare Parts,273
+ITM0126,Office Supplies Item 126,Office Supplies,Type-B,BOX,1621.39,17,N,Finished Goods,238
+ITM0127,Packaging Item 127,Packaging,Type-A,LTR,3270.15,4,Y,Spare Parts,167
+ITM0128,Chemicals Item 128,Chemicals,Standard,SET,591.49,19,Y,Raw Material,123
+ITM0129,Raw Materials Item 129,Raw Materials,Standard,BOX,3511.19,49,Y,Finished Goods,358
+ITM0130,Logistics Item 130,Logistics,Standard,KG,4586.64,54,Y,Raw Material,284
+ITM0131,Packaging Item 131,Packaging,Type-B,SET,2917.82,33,N,Finished Goods,242
+ITM0132,Office Supplies Item 132,Office Supplies,Premium,SET,4035.54,26,Y,Finished Goods,391
+ITM0133,,Electronics,Type-A,KG,4930.76,19,N,Finished Goods,403
+ITM0134,Chemicals Item 134,Chemicals,Premium,LTR,4964.32,56,N,Spare Parts,51
+ITM0135,Chemicals Item 135,Chemicals,Standard,KG,896.48,34,Y,Raw Material,124
+ITM0136,,Logistics,Premium,MTR,1899.49,30,Y,Finished Goods,151
+ITM0137,Chemicals Item 137,INVALID,Premium,MTR,3831.44,2,Y,Finished Goods,44
+ITM0138,Electronics Item 138,Electronics,Type-A,PCS,3704.0,15,Y,Finished Goods,81
+ITM0139,Packaging Item 139,Packaging,Standard,MTR,2991.6,21,Y,Spare Parts,458
+ITM0140,Chemicals Item 140,Chemicals,Standard,KG,2785.81,48,Y,Raw Material,357
+ITM0141,,Office Supplies,Premium,MTR,1597.08,10,Y,Spare Parts,104
+ITM0142,Office Supplies Item 142,Office Supplies,Type-B,BOX,4574.13,27,Y,Spare Parts,134
+ITM0143,Packaging Item 143,Packaging,Standard,KG,2680.5,4,Y,Spare Parts,354
+ITM0144,Electronics Item 144,Electronics,Type-B,BOX,1048.4,20,Y,Finished Goods,489
+ITM0145,Chemicals Item 145,Chemicals,Premium,PCS,3479.65,26,Y,Raw Material,174
+ITM0146,Office Supplies Item 146,Office Supplies,Standard,LTR,1801.42,30,Y,Raw Material,250
+ITM0147,Packaging Item 147,Packaging,Premium,KG,2814.81,10,Y,Spare Parts,293
+ITM0148,Machinery Item 148,Machinery,Type-B,LTR,1153.94,16,N,Raw Material,345
+ITM0149,Packaging Item 149,Packaging,Premium,BOX,845.33,11,Y,Raw Material,289
+ITM0150,Machinery Item 150,Machinery,Type-A,KG,4726.21,49,Y,Spare Parts,80
+ITM0001_DUP,Office Supplies Item 1,Office Supplies,Premium,SET,3560.65,2,Y,Spare Parts,123

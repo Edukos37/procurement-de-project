@@ -1,0 +1,102 @@
+CUSTOMER_ID,CUSTOMER_NAME,REGION,COUNTRY,CUSTOMER_TYPE,CREDIT_LIMIT_USD,PAYMENT_TERMS,IS_ACTIVE,ONBOARDING_DATE,CONTACT_EMAIL
+CUST0001,Customer 1 Ltd,APJ,India,SME,233444.73,NET60,N,2021-09-12,cust1@company.com
+CUST0002,Customer 2 Ltd,APJ,India,SME,363874.43,NET45,Y,2020-10-25,cust2@company.com
+CUST0003,Customer 3 Ltd,EMEA,Germany,Retailer,459843.93,NET30,Y,2021-06-23,cust3@company.com
+CUST0004,Customer 4 Ltd,NAM,Canada,Government,234908.9,NET60,Y,2019-09-07,cust4@company.com
+CUST0005,,APJ,India,Retailer,208586.37,NET45,Y,2021-07-28,
+CUST0006,Customer 6 Ltd,APJ,Japan,SME,488891.32,NET60,Y,2019-04-16,cust6@company.com
+CUST0007,Customer 7 Ltd,EMEA,Germany,Retailer,345370.08,NET60,Y,2019-01-03,cust7@company.com
+CUST0008,,NAM,Mexico,Government,465148.72,NET60,Y,2021-03-06,cust8@company.com
+CUST0009,Customer 9 Ltd,NAM,Canada,Wholesaler,397344.06,NET30,Y,2018-04-20,cust9@company.com
+CUST0010,Customer 10 Ltd,APJ,Australia,SME,204384.49,NET30,Y,2020-07-11,cust10@company.com
+CUST0011,Customer 11 Ltd,NAM,USA,SME,333729.23,NET60,Y,2019-05-20,cust11@company.com
+CUST0012,Customer 12 Ltd,APJ,Australia,Wholesaler,372431.09,NET30,Y,2018-01-11,cust12@company.com
+CUST0013,Customer 13 Ltd,NAM,USA,Retailer,-500,NET60,N,2018-07-31,
+CUST0014,Customer 14 Ltd,EMEA,UK,Government,16046.9,NET30,Y,2021-03-17,cust14@company.com
+CUST0015,Customer 15 Ltd,EMEA,UK,Manufacturer,251630.73,NET45,Y,2020-05-12,cust15@company.com
+CUST0016,Customer 16 Ltd,APJ,Australia,Government,300965.14,NET30,Y,2019-09-16,
+CUST0017,Customer 17 Ltd,NAM,Canada,Government,174020.75,NET60,Y,2019-09-08,cust17@company.com
+CUST0018,Customer 18 Ltd,EMEA,UK,Manufacturer,152809.59,NET45,Y,2019-10-30,cust18@company.com
+CUST0019,Customer 19 Ltd,NAM,USA,SME,498659.81,NET60,Y,2020-08-03,cust19@company.com
+CUST0020,Customer 20 Ltd,APJ,Australia,Retailer,411293.13,NET45,N,2018-10-13,cust20@company.com
+CUST0021,Customer 21 Ltd,APJ,Japan,Government,46242.92,NET45,N,2020-12-30,cust21@company.com
+CUST0022,Customer 22 Ltd,,France,SME,300971.77,NET30,Y,2021-09-08,cust22@company.com
+CUST0023,Customer 23 Ltd,INVALID,Australia,Government,483737.46,NET45,Y,2018-01-22,cust23@company.com
+CUST0024,Customer 24 Ltd,APJ,Australia,SME,118305.55,NET45,Y,2019-12-08,cust24@company.com
+CUST0025,Customer 25 Ltd,NAM,USA,Retailer,417345.69,NET45,Y,2019-12-04,cust25@company.com
+CUST0026,Customer 26 Ltd,APJ,India,Government,363777.03,NET30,Y,2018-04-02,cust26@company.com
+CUST0027,,APJ,Australia,Wholesaler,465662.0,NET60,Y,2021-02-04,cust27@company.com
+CUST0028,Customer 28 Ltd,EMEA,UK,Wholesaler,101329.59,NET45,Y,2021-06-11,cust28@company.com
+CUST0029,Customer 29 Ltd,NAM,Mexico,Wholesaler,110834.39,NET30,Y,2021-01-04,cust29@company.com
+CUST0030,Customer 30 Ltd,NAM,Mexico,Government,268580.36,NET60,N,2021-06-05,cust30@company.com
+CUST0031,Customer 31 Ltd,APJ,Australia,Wholesaler,408731.74,NET45,Y,2021-10-08,cust31@company.com
+CUST0032,Customer 32 Ltd,APJ,Japan,Wholesaler,260304.19,NET30,N,2020-05-16,cust32@company.com
+CUST0033,Customer 33 Ltd,EMEA,Germany,SME,91764.11,NET30,Y,2020-07-12,cust33@company.com
+CUST0034,Customer 34 Ltd,NAM,USA,Government,482276.25,NET45,N,2021-11-03,cust34@company.com
+CUST0035,Customer 35 Ltd,EMEA,Germany,SME,25121.75,NET45,Y,2019-07-17,cust35@company.com
+CUST0036,Customer 36 Ltd,NAM,Mexico,Government,279365.83,NET30,Y,2021-01-17,cust36@company.com
+CUST0037,Customer 37 Ltd,NAM,Mexico,Government,277713.1,NET30,Y,2019-09-02,cust37@company.com
+CUST0038,Customer 38 Ltd,APJ,India,Government,433992.33,NET30,Y,2021-04-19,cust38@company.com
+CUST0039,Customer 39 Ltd,EMEA,France,Wholesaler,394576.16,NET30,Y,2020-12-26,cust39@company.com
+CUST0040,Customer 40 Ltd,EMEA,UK,Manufacturer,290640.43,NET60,Y,2018-10-05,cust40@company.com
+CUST0041,Customer 41 Ltd,NAM,Mexico,Wholesaler,353699.0,NET30,Y,2019-05-22,cust41@company.com
+CUST0042,Customer 42 Ltd,EMEA,France,Manufacturer,317628.28,NET30,Y,2020-04-05,cust42@company.com
+CUST0043,Customer 43 Ltd,NAM,Canada,Government,INVALID,NET30,N,2021-07-24,cust43@company.com
+CUST0044,Customer 44 Ltd,NAM,Canada,Wholesaler,484383.0,NET45,Y,2019-10-24,cust44@company.com
+CUST0045,Customer 45 Ltd,NAM,Canada,Manufacturer,448135.78,NET30,Y,2021-07-06,cust45@company.com
+CUST0046,,NAM,USA,Government,109135.92,NET30,Y,2018-11-22,cust46@company.com
+CUST0047,Customer 47 Ltd,NAM,USA,Manufacturer,335609.32,NET30,N,2021-07-05,cust47@company.com
+CUST0048,Customer 48 Ltd,EMEA,Germany,Retailer,10532.29,NET30,Y,2020-11-29,cust48@company.com
+CUST0049,,APJ,Japan,Wholesaler,244073.12,NET30,Y,2018-07-31,cust49@company.com
+CUST0050,Customer 50 Ltd,NAM,USA,Wholesaler,43521.69,NET60,Y,2020-06-20,cust50@company.com
+CUST0051,Customer 51 Ltd,APJ,Japan,SME,346417.42,NET30,Y,2018-10-14,cust51@company.com
+CUST0052,Customer 52 Ltd,EMEA,UK,Manufacturer,397627.56,NET60,Y,2019-05-24,cust52@company.com
+CUST0053,Customer 53 Ltd,EMEA,France,Retailer,425467.13,NET45,Y,2020-11-26,cust53@company.com
+CUST0054,Customer 54 Ltd,APJ,India,Wholesaler,252494.98,NET45,Y,2020-12-17,cust54@company.com
+CUST0055,Customer 55 Ltd,APJ,India,Government,431798.86,NET45,Y,2020-08-22,cust55@company.com
+CUST0056,,,India,Retailer,474853.2,NET45,N,2020-05-17,cust56@company.com
+CUST0057,Customer 57 Ltd,APJ,India,Manufacturer,50962.57,NET30,Y,2021-01-03,cust57@company.com
+CUST0058,Customer 58 Ltd,EMEA,France,Retailer,161983.05,NET30,Y,2019-05-16,cust58@company.com
+CUST0059,Customer 59 Ltd,NAM,USA,Manufacturer,336378.99,NET30,Y,2018-01-26,cust59@company.com
+CUST0060,,EMEA,France,SME,393663.68,NET30,Y,2018-09-17,cust60@company.com
+CUST0061,Customer 61 Ltd,NAM,USA,Manufacturer,405482.84,NET30,Y,2021-12-29,cust61@company.com
+CUST0062,Customer 62 Ltd,EMEA,UK,Retailer,254808.9,NET45,Y,2019-06-07,cust62@company.com
+CUST0063,Customer 63 Ltd,EMEA,France,SME,11258.57,NET30,Y,2018-04-05,cust63@company.com
+CUST0064,Customer 64 Ltd,NAM,USA,SME,403526.59,NET60,N,2019-04-05,cust64@company.com
+CUST0065,Customer 65 Ltd,NAM,USA,SME,192676.0,NET30,Y,2019-04-03,cust65@company.com
+CUST0066,Customer 66 Ltd,APJ,Japan,Manufacturer,389028.46,NET30,N,2018-01-17,cust66@company.com
+CUST0067,Customer 67 Ltd,NAM,Mexico,Wholesaler,237324.08,NET45,Y,2021-01-24,cust67@company.com
+CUST0068,Customer 68 Ltd,APJ,India,Wholesaler,275357.15,NET60,Y,2019-11-18,INVALID
+CUST0069,Customer 69 Ltd,NAM,USA,Wholesaler,269609.1,NET45,Y,2018-10-19,cust69@company.com
+CUST0070,,APJ,Australia,Government,353414.99,NET60,Y,2021-04-04,cust70@company.com
+CUST0071,Customer 71 Ltd,APJ,Australia,SME,40518.6,NET30,Y,2019-08-21,cust71@company.com
+CUST0072,Customer 72 Ltd,NAM,Mexico,Manufacturer,165848.28,NET30,Y,2018-10-06,cust72@company.com
+CUST0073,Customer 73 Ltd,EMEA,UK,Government,163876.31,NET45,Y,2020-07-14,cust73@company.com
+CUST0074,Customer 74 Ltd,NAM,Mexico,Manufacturer,414929.48,NET30,Y,2019-11-03,cust74@company.com
+CUST0075,Customer 75 Ltd,EMEA,France,Retailer,341819.85,NET30,Y,2020-04-08,cust75@company.com
+CUST0076,Customer 76 Ltd,EMEA,UK,Retailer,403909.41,NET30,Y,2019-04-01,cust76@company.com
+CUST0077,Customer 77 Ltd,NAM,Mexico,Retailer,295338.66,NET30,Y,2018-05-13,cust77@company.com
+CUST0078,Customer 78 Ltd,EMEA,UK,Retailer,30921.2,NET30,N,2020-03-19,cust78@company.com
+CUST0079,Customer 79 Ltd,NAM,USA,Wholesaler,144741.07,NET30,Y,2021-06-11,cust79@company.com
+CUST0080,Customer 80 Ltd,APJ,Australia,Government,39879.74,NET30,N,2019-02-13,cust80@company.com
+CUST0081,Customer 81 Ltd,EMEA,France,Retailer,494807.77,NET45,N,2021-01-20,cust81@company.com
+CUST0082,Customer 82 Ltd,NAM,Canada,Manufacturer,98109.78,NET30,Y,2019-07-30,cust82@company.com
+CUST0083,Customer 83 Ltd,NAM,USA,Wholesaler,59065.83,NET45,Y,2019-03-26,cust83@company.com
+CUST0084,Customer 84 Ltd,NAM,USA,Wholesaler,125910.06,NET60,Y,2021-04-26,INVALID
+CUST0085,Customer 85 Ltd,NAM,Mexico,Wholesaler,419981.45,NET45,Y,2018-12-26,cust85@company.com
+CUST0086,Customer 86 Ltd,APJ,India,SME,244214.6,NET60,Y,2018-09-25,cust86@company.com
+CUST0087,Customer 87 Ltd,APJ,Japan,Retailer,20737.32,NET30,Y,2020-12-13,cust87@company.com
+CUST0088,Customer 88 Ltd,APJ,Japan,SME,59505.76,NET30,Y,2020-06-13,cust88@company.com
+CUST0089,Customer 89 Ltd,NAM,Mexico,SME,395625.98,NET60,Y,2020-02-14,cust89@company.com
+CUST0090,Customer 90 Ltd,EMEA,Germany,SME,201884.7,NET60,Y,2019-01-08,cust90@company.com
+CUST0091,Customer 91 Ltd,EMEA,UK,Wholesaler,172272.53,NET45,Y,2018-12-10,cust91@company.com
+CUST0092,Customer 92 Ltd,APJ,Australia,Manufacturer,228848.67,NET30,Y,2019-12-19,cust92@company.com
+CUST0093,Customer 93 Ltd,,Australia,Government,484859.89,NET45,N,2019-12-21,cust93@company.com
+CUST0094,Customer 94 Ltd,APJ,Australia,Wholesaler,89701.69,NET30,Y,2018-02-11,cust94@company.com
+CUST0095,Customer 95 Ltd,APJ,Japan,Wholesaler,368672.69,NET30,Y,2021-05-01,cust95@company.com
+CUST0096,Customer 96 Ltd,NAM,Mexico,Wholesaler,307585.64,NET30,Y,2019-11-10,cust96@company.com
+CUST0097,Customer 97 Ltd,APJ,Australia,SME,139979.74,NET30,Y,2018-04-12,cust97@company.com
+CUST0098,Customer 98 Ltd,EMEA,UK,Retailer,219526.92,NET60,N,2019-02-13,cust98@company.com
+CUST0099,Customer 99 Ltd,APJ,India,Government,423446.85,NET45,N,2020-09-28,cust99@company.com
+CUST0100,Customer 100 Ltd,NAM,USA,Manufacturer,443891.42,NET45,Y,2019-06-24,cust100@company.com
+CUST0001_DUP,Customer 1 Ltd,APJ,India,SME,233444.73,NET60,N,2021-09-12,cust1@company.com
